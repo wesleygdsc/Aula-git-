@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>JavaScript</title>
+		<script>
+				function calc(n){
+					if(document.getElementById("resultado").value !=""){
+						document.getElementById("resultado").value = parseFloat(document.getElementById("resultado").value)+n;
+				    }else{
+						document.getElementById("resultado").value= n;
+					}
+				}
+		</script>
+	</head>
+	<body>
+		<input type="button" name="up" value="UP" onclick="calc(2)"><br><br>
+		<input type="text" name="resultado" id="resultado">
+	</body>
+</html>
